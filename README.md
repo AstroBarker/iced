@@ -1,2 +1,4 @@
 # iced
-IMEX Convection Diffusion in Python 3.x
+Imex ConvEction Diffusion (in Python 3.x)
+
+Playing with IMEX SSPRK integrators.
