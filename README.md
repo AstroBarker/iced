@@ -24,6 +24,8 @@ and the tableau matrix for the implicit part is lower triangular,
 forming a diagonally implicit Runge-Kutta (DIRK) method for the implicit update.
 We keep the $b$ vectors identical in the tableaus here which helps reduce coupling error.
 
+The code is not particularly fast (it's Python) but it does what it needs to do.
+
 ## Literature References
 - [Ascher, Ruuth, and Spiteri](https://www.sciencedirect.com/science/article/abs/pii/S0168927497000561) formulate IMEX methods.
 - ARK methods are investigated for convection-diffusion-reactions problems by [Kennedy and Carpenter](https://www.sciencedirect.com/science/article/abs/pii/S0168927402001381). 
