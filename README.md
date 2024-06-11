@@ -22,7 +22,7 @@ $$u^{n+1} = u^{n} + \Delta t \sum_{i=1}^{s} b_{i} F(u^{i}) + \Delta t \sum_{i=1}
 Here, the tableau matrix for the explicit part (from $a_{ij}$) is strictly lower triangular 
 and the tableau matrix for the implicit part (from $\tilde{a}_{ij}$) is lower triangular, 
 forming a diagonally implicit Runge-Kutta (DIRK) method for the implicit update.
-We keep $b_{i} = \tilde{b}_{i}# in the tableaus here which helps reduce coupling error.
+We keep $b_{i} = \tilde{b}_{i}$ in the tableaus here which helps reduce coupling error.
 
 ## Literature References
 - [Ascher, Ruuth, and Spiteri](https://www.sciencedirect.com/science/article/abs/pii/S0168927497000561) formulate IMEX methods.
