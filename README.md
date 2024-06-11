@@ -15,11 +15,9 @@ $$u' = F(u) + G(u)$$
 
 where $F(u)$ is the "slow" evolving hyperbolic flux component that will be evolved explicitly and $G(u)$ is the diffusive component that will be evolved implicitly. An ARK iteration takes the form
 
-$$u^{(i)} = u^{n} + \Delta t \sum_{j=1}^{i-1} a_{ij} F(u^{j}) + \Delta t \sum_{j=1}^{i} \tilde{a}_{ij} G(u^{j})$$
+$$u^{(i)} = u^{n} + \Delta t \sum_{j=1}^{i-1} a_{ij} F(u^{j}) + \Delta t \sum_{j=1}^{i} \tilde{a}_{ij} G(u^{j}) \\
 
-...
-
-$$u^{n+1} = u^{n} + \Delta t \sum_{i=1}^{s} b_{i} F(u^{i}) + \Delta t \sum_{i=1}^{s} \tilde{b}_{i} G(u^{i})$$
+u^{n+1} = u^{n} + \Delta t \sum_{i=1}^{s} b_{i} F(u^{i}) + \Delta t \sum_{i=1}^{s} \tilde{b}_{i} G(u^{i})$$
 
 ## Literature References
 - [Ascher, Ruuth, and Spiteri](https://www.sciencedirect.com/science/article/abs/pii/S0168927497000561) formulate IMEX methods.
