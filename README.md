@@ -17,12 +17,12 @@ where $F(u)$ is the "slow" evolving hyperbolic flux component that will be evolv
 
 $$u^{(i)} = u^{n} + \Delta t \sum_{j=1}^{i-1} a_{ij} F(u^{j}) + \Delta t \sum_{j=1}^{i} \tilde{a}_{ij} G(u^{j})$$ for $i = 1...s$, and then
 
-$$u^{n+1} = u^{n} + \Delta t \sum_{i=1}^{s} b_{i} F(u^{i}) + \Delta t \sum_{i=1}^{s} \tilde{b}_{i} G(u^{i})$$.
+$$u^{n+1} = u^{n} + \Delta t \sum_{i=1}^{s} b_{i} F(u^{i}) + \Delta t \sum_{i=1}^{s} \tilde{b}_{i} G(u^{i})$$
 
 Here, the tableau matrix for the explicit part (from $a_{ij}$) is strictly lower triangular 
-and the tableau matrix for the implicit part (from $\tilde{a}_{ij}$) is lower triangular, 
+and the tableau matrix for the implicit part is lower triangular, 
 forming a diagonally implicit Runge-Kutta (DIRK) method for the implicit update.
-We keep $b_{i} = \tilde{b}_{i}$ in the tableaus here which helps reduce coupling error.
+We keep the $b$ vectors identical in the tableaus here which helps reduce coupling error.
 
 ## Literature References
 - [Ascher, Ruuth, and Spiteri](https://www.sciencedirect.com/science/article/abs/pii/S0168927497000561) formulate IMEX methods.
