@@ -1,0 +1,16 @@
+[project]
+name = "iced"
+version = "0.1.0"
+description = "IMEX convection diffusion model"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "ruff>=0.6.2",
+    "numpy>=2.1.0",
+    "matplotlib>=3.9.2",
+    "pyqt5>=5.15.11",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
