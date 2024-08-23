@@ -67,12 +67,12 @@ def weno(order, q):
     q_stencils = np.zeros(order)
     alpha = np.zeros(order)
     for k in range(order):
-      for l in range(order):
-        for m in range(l + 1):
-          beta[k, i] += sigma[k, l, m] * q[i + k - l] * q[i + k - m]
+      for j in range(order):
+        for m in range(j + 1):
+          beta[k, i] += sigma[k, j, m] * q[i + k - j] * q[i + k - m]
       alpha[k] = C[k] / (epsilon + beta[k, i] ** 2)
-      for l in range(order):
-        q_stencils[k] += a[k, l] * q[i + k - l]
+      for j in range(order):
+        q_stencils[k] += a[k, j] * q[i + k - j]
     w[:, i] = alpha / np.sum(alpha)
     qL[i] = np.dot(w[:, i], q_stencils)
 
